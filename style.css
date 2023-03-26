@@ -136,11 +136,6 @@ p {
   font-size: 1rem;
 }
 
-.card:hover {
-  cursor: pointer;
-  border-color: #147d26;
-}
-
 .subject::before {
   content: "";
   background: rgb(222, 226, 230);
