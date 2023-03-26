@@ -163,6 +163,10 @@ p {
   /* border: 1px solid; */
 }
 
+.material-groups p {
+  padding: 0;
+}
+
 .material-list {
   background: #fff;
   padding: 40px;
@@ -179,7 +183,6 @@ p {
 
 .material-item p {
   grid-column: 2;
-  padding: 0;
   text-align: left;
 }
 
@@ -202,22 +205,33 @@ p {
   background: #f7f7f7;
 }
 
+.col-1 {
+  grid-column: 1;
+  grid-row: auto;
+}
+
+.description.col-1 h3 {
+  text-align: right;
+}
+
+.col-2 {
+  grid-column: 2;
+  grid-row: auto;
+}
+
 .description {
-  display: flex;
-  padding: 40px;
-  place-items: center;
+  display: grid;
+  padding: 2.5rem;
+  gap: 1rem;
+  place-content: center;
+  color: rgb(33, 37, 41);
 }
 
 .description h3 {
   font-size: 2rem;
 }
 
-.col-1 {
-  grid-column: 1;
-  grid-row: auto;
-}
-
-.col-2 {
-  grid-column: 2;
-  grid-row: auto;
+.description h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
